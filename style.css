@@ -1,20 +1,110 @@
 *{
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
 
+body{
+    height: 100vh;
+    color: #fff;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(
+        45deg, rgba(2,0,36,1)
+        0%,    rgb(4, 4, 28)
+        98%,   rgba(0,212,255,1) 
+        100%
+    ); 
 }
 .header{
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
+.left{
+    width: 100%;
+    margin-left: 10px;
+
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.right h3{
+    font-size: 0.7em;
+}
+.right button{
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: none;
+    width: 150px;
+    padding: 8px 20px;
+}
 .box1{
-    
+   display: flex; 
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+form{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: red;
 }
 .box2{
-    
+    display: block;
 }
 .footer{
-    
+    display: block;
 }
 .show  { opacity: 1; }
 .hidden{ opacity: 0; }
+
+
+
+
+
+
+
+
+
+
+.headerBusca { 
+    background: #2A7AE4; 
+} .headerBusca-form 
+button { background-color: #2A7AE4; color: white; } 
+.headerBusca-icon-desktop { 
+    border: 2px solid #2A7AE4; 
+    background-color: #2A7AE4; 
+    position: absolute; 
+    right: 15px; 
+    margin-right: 10px; 
+    display: inline-block;
+    top: calc(100% + 30px); 
+    border-radius: 200px; z-index: 11; } 
+    .headerBusca-icon-mobile, 
+    .menu .headerBusca-icon-mobile { 
+        border: 2px solid #2A7AE4; 
+        background-color: #2A7AE4;
+    } 
+    .headerBusca-icon-mobile { 
+        position: absolute; 
+        right: 15px; 
+        display: inline-block; 
+        top: calc(100% + 20px); 
+        border-radius: 200px; 
+        z-index: 11; 
+        transform: translateY(-4px); 
+    } 
+    @media(min-width: 1024px){ 
+        .menu .headerBusca-icon { left: 150px; } 
+    } 
